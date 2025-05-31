@@ -1,0 +1,140 @@
+/* ====== FONT: Satoshi ====== */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ====== GLOBAL ====== */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f8f9fa;
+  width: 375px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Satoshi', sans-serif;
+  position: relative;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* ====== CARD ====== */
+.card {
+  width: 100%;
+  border: none;
+  border-radius: 1.25rem;
+}
+
+/* ====== HEADER ====== */
+.custom-header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #0a1c64;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.custom-header::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background-color: #ffa500;
+  border-bottom-left-radius: 100px;
+  z-index: 0;
+}
+
+.custom-header * {
+  z-index: 1;
+}
+
+.custom-header h5,
+.custom-header h6 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+/* ====== BUTTON ====== */
+.btn-warning {
+  background-color: #ffa500;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e69500;
+}
+
+.btn-dark-blue {
+  background-color: #0a1c64;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.btn-dark-blue:hover {
+  background-color: #081550;
+}
+
+/* ====== FOOTER NAVBAR ====== */
+.navbar.fixed-bottom {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #dee2e6;
+  background-color: #ffffff !important;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* ====== SOAL TEST ====== */
+.soal-box {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.soal-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0a1c64;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
