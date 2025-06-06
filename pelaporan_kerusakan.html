@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=375, initial-scale=1" />
+  <title>Pelaporan Kerusakan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="card-container">
+    <div class="custom-header px-3">
+      <i class="bi bi-arrow-left text-white fs-4"></i>
+      <h5>Pelaporan Kerusakan</h5>
+      <div></div>
+    </div>
+
+    <div class="p-3">
+      <div class="row gy-3">
+        <!-- Kartu 1 -->
+        <div class="col-6">
+          <div class="report-card p-3 shadow-sm rounded">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-4 me-2"></i>
+              <div>
+                <strong>Student 2</strong><br />
+                <small>NIM</small>
+              </div>
+            </div>
+            <p class="mb-1">Alat yang dilaporkan : Alat 1</p>
+            <p class="mb-2 text-muted">Tanggal pelaporan : dd/mm/yy</p>
+            <select class="form-select status-select">
+              <option>Status</option>
+              <option>Pengecekan</option>
+              <option>Diperbaiki</option>
+              <option>Teratasi</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Kartu 2 -->
+        <div class="col-6">
+          <div class="report-card p-3 shadow-sm rounded">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-4 me-2"></i>
+              <div>
+                <strong>Student 2</strong><br />
+                <small>NIM</small>
+              </div>
+            </div>
+            <p class="mb-1">Alat yang dilaporkan : Alat 1</p>
+            <p class="mb-2 text-muted">Tanggal pelaporan : dd/mm/yy</p>
+            <button class="btn status-fixed">Teratasi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -148,3 +148,71 @@ select.form-select-sm {
 .bi-trash {
   cursor: pointer;
 }
+
+/* ====== PELAPORAN KERUSAKAN ====== */
+.report-card {
+  background: #fff;
+  border-radius: 20px;
+  min-height: 160px;
+  font-size: 14px;
+}
+
+.status-select {
+  font-weight: bold;
+  background-color: #0a1c64;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 6px 12px;
+  text-align: center;
+}
+
+.status-select option {
+  color: black;
+}
+
+.status-fixed {
+  background-color: #0a1c64;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 6px 12px;
+  width: 100%;
+}
+
+/* ====== SOAL SELEKSI PENDAFTARAN ====== */
+.soal-box {
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.soal-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #0a1c64;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dark-blue {
+  background-color: #0a1c64;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-dark-blue:hover {
+  background-color: #081550;
+}
