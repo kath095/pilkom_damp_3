@@ -9,52 +9,49 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="profile-container">
-    <header class="profile-header">
-      <button class="btn btn-link p-0 text-dark" aria-label="Back">
-        <i class="bi bi-arrow-left"></i>
-      </button>
-      <h5>Profile</h5>
-      <div style="width: 2rem;"></div> <!-- spacer -->
-    </header>
-    <main class="profile-card">
-      <div class="d-flex align-items-center gap-3 mb-4">
-        <img src="images/pp.jpg" alt="Foto Profile" class="profile-img" />
-        <div class="profile-info">
-          <h6>Leo Valdez</h6>
-          <p class="email">leovaldes@student.ub.ac.id</p>
-          <p class="nimnip">235150400111050</p>
+  <div class="profile-wrapper">
+    <!-- HEADER -->
+    <div class="profile-header px-3 py-3">
+      <i class="bi bi-arrow-left text-white fs-5"></i>
+      <h5 class="fw-bold m-0 text-white">Profile</h5>
+      <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-bell-fill text-white fs-5"></i>
+        <i class="bi bi-three-dots-vertical text-white fs-5"></i>
+      </div>
+      <div class="orange-curve"></div>
+    </div>
+
+    <!-- CARD -->
+    <div class="profile-card mx-3">
+      <div class="d-flex align-items-center gap-3 mb-3">
+        <img src="images/pp2.jpg" alt="Foto" class="profile-img" />
+        <div>
+          <h6 class="fw-bold m-0">Leo Valdez</h6>
+          <small class="email">leovaldes@student.ub.ac.id</small><br />
+          <small class="nimnip">235150400111050</small>
         </div>
       </div>
 
-      <section>
-        <label class="section-label">Status Akademik</label>
-        <p class="section-value">Mahasiswa Aktif</p>
-      </section>
+      <small class="section-label">Status Akademik</small>
+      <p class="section-value">Mahasiswa Aktif</p>
 
-      <section>
-        <label class="section-label">Jenjang dan Program Studi</label>
-        <p class="section-value">S1 - Sistem Informasi</p>
-      </section>
+      <small class="section-label">Jenjang dan Program Studi</small>
+      <p class="section-value">S1 - Sistem Informasi</p>
 
-      <section>
-        <h6 class="text-primary">Kelas Praktikan</h6>
-        <p class="section-value">Pemrograman SQL SI-A</p>
-      </section>
+      <h6 class="fw-bold text-primary mb-1">Kelas Praktikan</h6>
+      <p class="section-value">Pemrograman SQL SI-A</p>
 
-      <section>
-        <h6 class="text-primary">Kelas Asisten</h6>
-        <p class="section-value">Rekayasa Web Praktik TEKKOM - A</p>
-        <p class="section-value">Pemrograman Lanjut SI-C</p>
-      </section>
+      <h6 class="fw-bold text-primary mb-1">Kelas Asisten</h6>
+      <p class="section-value">Rekayasa Web Praktik TEKKOM - A</p>
+      <p class="section-value">Pemrograman Lanjut SI-C</p>
 
-      <div class="btn-group-profile">
-        <button class="btn-idcard">
-          Id Card</button>
-        <button class="btn-logout">Log Out</button>
+      <div class="d-flex justify-content-center gap-3 mt-4">
+        <button class="btn btn-idcard">Id Card</button>
+        <button class="btn btn-logout">Log Out</button>
       </div>
-    </main>
+    </div>
 
+    <!-- FOOTER NAVIGATION -->
     <nav class="profile-nav d-flex justify-content-around align-items-center fixed-bottom">
       <button class="btn btn-link d-flex flex-column align-items-center active">
         <i class="bi bi-house-door-fill"></i>
