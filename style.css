@@ -27,25 +27,23 @@ body {
   position: relative;
 }
 
-/* ====== CONTAINER ====== */
-.container {
-  width: 100%;
-  padding: 0 1rem;
+/* ====== CARD CONTAINER ====== */
+.card-container {
+  width: 375px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-/* ====== CARD ====== */
-.card {
-  width: 100%;
-  border: none;
-  border-radius: 1.25rem;
-}
-
-/* ====== HEADER ====== */
+/* ====== CUSTOM HEADER ====== */
 .custom-header {
   position: relative;
   width: 100%;
   height: 80px;
-  background-color: #0a1c64;
+  background-color: #0a1c64; /* Biru tua */
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   display: flex;
@@ -62,7 +60,7 @@ body {
   right: -40px;
   width: 120px;
   height: 120px;
-  background-color: #ffa500;
+  background-color: #ffa500; /* Oranye terang */
   border-bottom-left-radius: 100px;
   z-index: 0;
 }
@@ -71,8 +69,7 @@ body {
   z-index: 1;
 }
 
-.custom-header h5,
-.custom-header h6 {
+.custom-header h5 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -81,7 +78,14 @@ body {
   color: white;
 }
 
-/* ====== BUTTON ====== */
+/* ====== TABLE ====== */
+.table th,
+.table td {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* ====== BUTTON: Bootstrap override + custom color ====== */
 .btn-warning {
   background-color: #ffa500;
   border: none;
@@ -91,210 +95,56 @@ body {
   background-color: #e69500;
 }
 
-.btn-dark-blue {
-  background-color: #0a1c64;
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 14px;
-  padding: 0.5rem 1rem;
-  text-align: left;
-}
-
-.btn-dark-blue:hover {
-  background-color: #081550;
-}
-
-/* ====== FOOTER NAVBAR ====== */
-.navbar.fixed-bottom {
-  max-width: 375px;
-  width: 100%;
-  margin: 0 auto;
-  border-top: 1px solid #dee2e6;
-  background-color: #ffffff !important;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
-}
-
-nav a {
-  text-decoration: none;
-}
-
-/* ====== SOAL TEST ====== */
-.soal-box {
-  background-color: #f8f9fa;
-  border-radius: 1rem;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
-}
-
-.soal-number {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #0a1c64;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ====== PROFILE WRAPPER & CARD ====== */
-.profile-wrapper {
-  width: 375px;
-  margin: 0 auto;
-  height: 100vh;
-  border-radius: 30px;
-  background: #fff;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-/* ====== PROFILE HEADER (atas biru dengan curve orange) ====== */
-.profile-header {
-  background: #0a1c64;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-
-.profile-header h5 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  color: white;
-  margin: 0;
-}
-
-.profile-header .bi {
-  font-size: 1.3rem;
-  color: white;
-}
-
-.orange-curve {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 120px;
-  height: 120px;
+.btn-orange {
   background-color: #ffa500;
-  border-bottom-left-radius: 120px;
-  z-index: 0;
-}
-
-/* ====== PROFILE CARD ====== */
-.profile-card {
-  background: #fff;
+  color: white;
   border-radius: 25px;
-  margin: 1rem 1rem 6rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  flex-grow: 1;
-  overflow-y: auto;
-}
-
-/* ====== PROFILE FOTO & INFO ====== */
-.profile-img {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  object-fit: cover;
-  padding: 3px;
-}
-
-.email {
-  font-size: 0.85rem;
-  color: #888;
-  margin-bottom: 0;
-}
-
-.nimnip {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 0;
-}
-
-.section-label {
-  font-size: 0.75rem;
-  color: #8c8c8c;
-  font-weight: 600;
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
-}
-
-.section-value {
-  font-size: 0.95rem;
-  color: #333;
-  border-bottom: 1px solid #d7d7d7;
-  padding-bottom: 6px;
-  margin-bottom: 0.75rem;
-}
-
-/* ====== BUTTONS: ID Card & Logout ====== */
-.btn-idcard {
-  background: #0a1c64;
-  color: white;
-  border-radius: 20px;
-  padding: 0.4rem 1.5rem;
+  padding: 6px 40px;
   border: none;
-  font-weight: 600;
 }
 
-.btn-idcard:hover {
-  background: #081550;
-}
-
-.btn-logout {
-  background: #ffa500;
+.btn-blue {
+  background-color: #0091d3;
   color: white;
-  border-radius: 20px;
-  padding: 0.4rem 1.5rem;
+  border-radius: 25px;
+  padding: 6px 40px;
   border: none;
-  font-weight: 600;
 }
 
-.btn-logout:hover {
-  background: #e69500;
-}
-
-/* ====== FOOTER NAVIGATION (fixed bottom) ====== */
-.profile-nav {
-  max-width: 375px;
-  width: 100%;
-  border-top: 1px solid #dee2e6;
-  border-radius: 0 0 30px 30px;
-  background: #fff;
+/* ====== POPUP MODAL ====== */
+.popup {
   position: fixed;
-  bottom: 0;
+  bottom: 120px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  justify-content: space-around;
-  padding: 0.4rem 0;
-  box-shadow: 0 -1px 6px rgba(0,0,0,0.1);
-  z-index: 10;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 1000;
+  text-align: center;
 }
 
-.profile-nav button i {
-  font-size: 1.6rem;
-  color: #aaa;
+.popup.show {
+  display: block;
 }
 
-.profile-nav button small {
-  font-size: 0.75rem;
-  color: #aaa;
-  font-weight: 400;
+.popup i {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-.profile-nav button.active i,
-.profile-nav button.active small {
-  color: #999;
+/* ====== DROPDOWN STYLE (select) ====== */
+select.form-select-sm {
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 0.5rem;
+  border-color: #ccc;
+}
+
+/* ====== ICON DELETE (trash) ====== */
+.bi-trash {
+  cursor: pointer;
 }
