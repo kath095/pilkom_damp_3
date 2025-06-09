@@ -20,17 +20,29 @@ html {
 
 body {
   background-color: #f8f9fa;
-  width: 375px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin: 0;
   font-family: 'Satoshi', sans-serif;
-  position: relative;
 }
+
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  font-family: 'Satoshi', sans-serif;
+}
+
+/* ====== WRAPPER UNTUK BATAS MAKSIMUM ====== */
+.layout-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
 
 /* ====== CARD CONTAINER ====== */
 .card-container {
-  width: 375px;
-  margin: 0 auto;
+  width: 100%;
   background: white;
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
