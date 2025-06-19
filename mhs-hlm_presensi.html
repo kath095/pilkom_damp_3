@@ -31,103 +31,102 @@
 
     <div class="container-fluid py-4">
       <div class="w-100 mx-auto px-3 position-relative">
-        <!-- filter dan refresh (refresh blm hidup) -->
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <p class="text-muted small mb-0">
-            Menampilkan: <span id="filterStatus">Berjalan</span>
-          </p>
-
-          <div class="d-flex gap-2">
-            <div class="dropdown">
-              <button class="btn p-2" data-bs-toggle="dropdown">
-                <i class="bi bi-funnel-fill"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onclick="setFilter('Berjalan')"
-                    >Berjalan</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onclick="setFilter('Terlewat')"
-                    >Terlewat</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <button class="btn p-2">
-              <i class="bi bi-arrow-clockwise"></i>
+    <!-- filter dan refresh (refresh blm hidup) -->
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <p class="text-muted small mb-0">
+          Menampilkan: <span id="filterStatus">Berjalan</span>
+        </p>
+        <div class="d-flex gap-2">
+          <div class="dropdown">
+            <button class="btn p-2" data-bs-toggle="dropdown">
+              <i class="bi bi-funnel-fill"></i>
             </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="setFilter('Berjalan')"
+                  >Berjalan</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="setFilter('Terlewat')"
+                  >Terlewat</a
+                >
+              </li>
+            </ul>
           </div>
-        </div>
-
-        <!-- card presensi -->
-        <div class="bg-white rounded-4 shadow-sm p-4 text-center">
-          <h6 class="fw-bold mb-1">Pemrograman SQL</h6>
-          <p class="mb-1">Ini adalah tema pertemuan</p>
-          <small id="status-presensi" class="text-muted d-block mb-3">
-            Presensi berlaku hingga tanggal : dd/mm/yy pukul 00:00
-          </small>
-
-          <!-- tombol -->
-          <div
-            class="d-flex justify-content-between flex-wrap gap-2 mb-3"
-            id="presensi-buttons"
-          >
-            <!-- 3 status -->
-            <button
-              class="btn btn-success flex-fill rounded-pill"
-              onclick="konfirmasi('HADIR')"
-            >
-              Hadir
-            </button>
-            <button
-              class="btn btn-warning text-white flex-fill rounded-pill"
-              onclick="konfirmasi('IZIN')"
-            >
-              Izin
-            </button>
-            <button
-              class="btn btn-info text-white flex-fill rounded-pill"
-              onclick="konfirmasi('SAKIT')"
-            >
-              Sakit
-            </button>
-          </div>
-        </div>
-
-        <!-- popup konfirmasi simpan -->
-        <div
-          id="popup-konfirmasi"
-          class="position-absolute top-50 start-50 translate-middle bg-white text-center p-4 rounded-4 shadow d-none"
-        >
-          <p class="fw-bold">
-            Simpan presensi sebagai <span id="presensiValue"></span>?
-          </p>
-          <button
-            class="btn text-white w-100 py-2"
-            style="background-color: #061b64; border-radius: 12px"
-            onclick="simpanPresensi()"
-          >
-            Simpan
+          <button class="btn p-2">
+            <i class="bi bi-arrow-clockwise"></i>
           </button>
         </div>
+      </div>
+        
+       <!-- card presensi -->
+      <div class="bg-white rounded-4 shadow-sm p-4 text-center">
+        <h6 class="fw-bold mb-1">Pemrograman SQL</h6>
+        <p class="mb-1">Ini adalah tema pertemuan</p>
+        <small id="status-presensi" class="text-muted d-block mb-3">
+          Presensi berlaku hingga tanggal : dd/mm/yy pukul 00:00
+        </small>
 
-        <!-- popup berhasil -->
+      <!-- tombol -->
         <div
-          id="popup-berhasil"
-          class="position-absolute top-50 start-50 translate-middle bg-info text-white text-center p-4 rounded-4 shadow d-none"
+          class="d-flex justify-content-between flex-wrap gap-2 mb-3"
+          id="presensi-buttons"
         >
-          <i class="bi bi-check-circle-fill fs-1"></i>
-          <p class="fw-bold mt-2 mb-0">Presensi anda berhasil disimpan!</p>
+          <!-- 3 status -->
+          <button
+            class="btn btn-success flex-fill rounded-pill"
+            onclick="konfirmasi('HADIR')"
+          >
+            Hadir
+          </button>
+          <button
+            class="btn btn-warning text-white flex-fill rounded-pill"
+            onclick="konfirmasi('IZIN')"
+          >
+            Izin
+          </button>
+          <button
+            class="btn btn-info text-white flex-fill rounded-pill"
+            onclick="konfirmasi('SAKIT')"
+          >
+            Sakit
+          </button>
         </div>
       </div>
+
+      <!-- popup konfirmasi simpan -->
+      <div
+        id="popup-konfirmasi"
+        class="position-absolute top-50 start-50 translate-middle bg-white text-center p-4 rounded-4 shadow d-none"
+      >
+        <p class="fw-bold">
+          Simpan presensi sebagai <span id="presensiValue"></span>?
+        </p>
+        <button
+          class="btn text-white w-100 py-2"
+          style="background-color: #061b64; border-radius: 12px"
+          onclick="simpanPresensi()"
+        >
+          Simpan
+        </button>
+      </div>
+
+      <!-- popup berhasil -->
+      <div
+        id="popup-berhasil"
+        class="position-absolute top-50 start-50 translate-middle bg-info text-white text-center p-4 rounded-4 shadow d-none"
+      >
+        <i class="bi bi-check-circle-fill fs-1"></i>
+        <p class="fw-bold mt-2 mb-0">Presensi anda berhasil disimpan!</p>
+      </div>
+    </div>
     </div>
 
     <!-- biar setelah berhasil disimpan, card tidak aktif lagi + nunjukin status absen dan wkt absen -->
