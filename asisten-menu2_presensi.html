@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=375, user-scalable=no" />
+    <title>asisten - menu 2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="custom-header">
+      <a href="asisten-menu_presensi.html" class="text-white">
+        <i class="bi bi-arrow-left fs-4"></i>
+      </a>
+      <h5>Presensi Mahasiswa</h5>
+      <div>
+        <i class="bi bi-bell text-white fs-4"></i>
+        <i class="bi bi-three-dots-vertical text-white fs-5 ms-2"></i>
+      </div>
+    </div>
+
+    <div class="container-fluid p-3 pb-5">
+      <!-- judul buat presensi -->
+      <h6 class="fw-bold mb-3" style="color: #061b64">Buat Presensi</h6>
+
+      <!-- card presensi - 1 -->
+      <div class="bg-white rounded-4 shadow-sm p-3 mb-4">
+        <div class="d-flex">
+          <!-- jam & panah -->
+          <div
+            class="me-3 d-flex flex-column align-items-center border-end pe-3"
+            style="border-color: #ffa500 !important"
+          >
+            <span class="fw-medium text-grey mb-1">09:40</span>
+            <i class="bi bi-arrow-down text-warning mb-1"></i>
+            <span class="fw-medium text-grey">12:10</span>
+          </div>
+
+          <!-- info & tombol -->
+          <div class="flex-grow-1">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <p class="mb-0 fw-semibold text-dark">Rekayasa Web Praktik</p>
+                <p class="text-secondary small">Kelas</p>
+                <p class="text-secondary small mb-0">
+                  <i class="bi bi-geo-alt-fill me-1 text-warning"></i> E.3.3
+                </p>
+              </div>
+              <a
+                href="asisten-buat_presensi.html"
+                class="btn btn-sm px-3 py-1 rounded-pill d-flex align-items-center fw-semibold"
+                style="background-color: #ffa500; color: white"
+              >
+                <i class="bi bi-plus-circle me-1"></i> Presensi
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card presensi - 2 -->
+      <div class="bg-white rounded-4 shadow-sm p-3 mb-4">
+        <div class="d-flex">
+          <!-- jam & panah -->
+          <div
+            class="me-3 d-flex flex-column align-items-center border-end pe-3"
+            style="border-color: #ffa500 !important"
+          >
+            <span class="fw-medium text-grey mb-1">09:40</span>
+            <i class="bi bi-arrow-down text-warning mb-1"></i>
+            <span class="fw-medium text-grey">12:10</span>
+          </div>
+
+          <!-- info & tombol -->
+          <div class="flex-grow-1">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <p class="mb-0 fw-semibold text-dark">Rekayasa Web Praktik</p>
+                <p class="text-secondary small">Kelas</p>
+                <p class="text-secondary small mb-0">
+                  <i class="bi bi-geo-alt-fill me-1 text-warning"></i> E.3.3
+                </p>
+              </div>
+              <a
+                href="asisten-buat_presensi.html"
+                class="btn btn-sm px-3 py-1 rounded-pill d-flex align-items-center fw-semibold"
+                style="background-color: #ffa500; color: white"
+              >
+                <i class="bi bi-plus-circle me-1"></i> Presensi
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- judul riwayat presensi -->
+      <h6 class="fw-bold mb-3" style="color: #061b64">Riwayat Presensi</h6>
+
+      <div class="bg-light rounded-4 shadow-sm p-3 mb-3">
+        <div class="d-flex">
+          <!-- jam & panah -->
+          <div
+            class="me-3 d-flex flex-column align-items-center border-end pe-3"
+            style="border-color: #ffa500 !important"
+          >
+            <span class="fw-medium text-dark mb-1">09:40</span>
+            <i class="bi bi-arrow-down text-warning"></i>
+            <span class="fw-medium text-dark mt-1">12:10</span>
+          </div>
+
+          <!-- detail riwayat -->
+          <div class="flex-grow-1">
+            <p class="fw-semibold mb-0 text-dark">Rekayasa Web Praktik</p>
+            <p class="text-secondary small mb-0">Kelas Tanggal dd/mm/yy · Waktu 00:00</p>
+            <p class="text-secondary small mb-0">
+              <i class="bi bi-geo-alt-fill text-warning"></i> E.3.3
+            </p>
+          </div>
+        </div>
+
+        <!-- pembatas horizontal -->
+        <hr class="my-2" style="border-top: 2px solid orange;" />
+
+        <!-- progress bar -->
+        <div class="progress rounded-pill my-2" style="height: 8px;">
+          <div class="progress-bar bg-primary" style="width: 50%"></div>
+        </div>
+
+        <!-- status -->
+        <div class="mb-3">
+          <ul class="list-unstyled small text-dark">
+            <li class="d-flex justify-content-between align-items-center">
+              <span><span class="dot bg-danger me-2"></span>Alpa</span>
+              <span>x</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center">
+              <span><span class="dot bg-info me-2"></span>Sakit</span>
+              <span>x</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center">
+              <span><span class="dot bg-warning me-2"></span>Izin</span>
+              <span>x</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center">
+              <span><span class="dot bg-success me-2"></span>Hadir</span>
+              <span>x</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- tombol rincian -->
+        <a
+        href="asisten-riwayat_presensi.html"
+        class="btn w-100 text-white rounded-pill d-flex align-items-center justify-content-center gap-2 fw-semibold"
+        style="background-color: #007bff"
+        >
+        Rincian <i class="bi bi-arrow-right"></i>
+        </a>
+
+      </div>
+
+      <!-- style utk dot status -->
+      <!-- ditambahin disini karena gamau otak atik css general -->
+      <style>
+        .dot {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+      </style>
+
+
+    <!-- Bottom Navigation -->
+    <nav
+      class="navbar fixed-bottom bg-white border-top d-flex justify-content-around py-2"
+    >
+      <a class="text-center text-muted small" href="#"
+        ><i class="bi bi-house-door-fill fs-5 d-block"></i>Beranda</a
+      >
+      <a class="text-center text-muted small small" href="#"
+        ><i class="bi bi-megaphone-fill fs-5 d-block"></i>Pengumuman</a
+      >
+      <a class="text-center text-muted small" href="#"
+        ><i class="bi bi-chat-left-text-fill fs-5 d-block"></i>Forum</a
+      >
+    </nav>
+  </body>
+</html>
