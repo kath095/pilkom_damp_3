@@ -1,148 +1,111 @@
-<!-- <!doctype html> -->
-
-<html>
-
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <style>
-        @font-face {
-        font-family: 'Satoshi';
-        src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
-            url('../fonts/Satoshi-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        }
-    </style> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=375, initial-scale=1" />
+  <title>Modul Praktikan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<body class="bg-[#081B58] font-[Satoshi]">
-
-<div id="container" class="flex flex-col gap-[20px] justify-end h-full">
-
-    <img src="asset/Ellipse.png" 
-        class="min-w-[233.74px] fixed right-[-80px] top-[-50px] z-[-2]">
-
-
-    <div id="top" class="flex flex-row items-center px-[10px] gap-[15px]">
-        <!-- Judul -->
-        
-        <img src="asset/arrow_back.png">
-        <div class="flex-grow text-start flex flex-col">
-            <p class="text-[25px] text-white">Pemrograman SQL</p>
-            <p class="text-[15px] text-white font-[Roboto]">Sistem Informasi | A</p>
-        </div>
-        <img src="asset/notifications.png">
-        <img src="asset/settings.png" >
-    </div>
-
+<body>
+  <div class="profile-wrapper">
     
-    <div class="bg-white overflow-y-auto rounded-t-[25px] h-[88%] flex flex-col px-[10px] gap-[15px] pb-[55px]">
-        <!-- Isi -->
-
-        <div class="flex flex-col pt-[30px] gap-[2px] grow">
-
-            <div class="flex flex-row bg-[#C4C4C4]/20 items-center gap-[15px] rounded-[15px] p-[5px]">
-                <p class="text-[38px] text-[#D1D1D1]">01</p>
-                <div class="flex flex-col grow">
-                    <p class="text-[14px]">Kontrak Kuliah dan RPS</p>
-                    <p class="text-[12px] text-[#6B6B6B]">Tanggal ditambahkan : dd/mm/yy</p>
-                </div>
-                <p>check</p>
-            </div>
-            
-            <div class="flex flex-row bg-[#C4C4C4]/20 items-center gap-[15px] rounded-[15px] p-[5px]">
-                <p class="text-[38px] text-[#D1D1D1]">02</p>
-                <div class="flex flex-col grow">
-                    <p class="text-[14px]">Modul 1</p>
-                    <p class="text-[12px] text-[#6B6B6B]">Tanggal ditambahkan : dd/mm/yy</p>
-                </div>
-                <p>check</p>
-            </div>
-            
-            <div class="flex flex-row bg-[#C4C4C4]/20 items-center gap-[15px] rounded-[15px] p-[5px]">
-                <p class="text-[38px] text-[#D1D1D1]">03</p>
-                <div class="flex flex-col grow">
-                    <p class="text-[14px]">Modul 2</p>
-                    <p class="text-[12px] text-[#6B6B6B]">Tanggal ditambahkan : dd/mm/yy</p>
-                </div>
-                <p>check</p>
-            </div>
-            
-            <div class="flex flex-row bg-[#C4C4C4]/20 items-center gap-[15px] rounded-[15px] p-[5px]">
-                <p class="text-[38px] text-[#D1D1D1]">04</p>
-                <div class="flex flex-col grow">
-                    <p class="text-[14px]">Modul 3</p>
-                    <p class="text-[12px] text-[#6B6B6B]">Tanggal ditambahkan : dd/mm/yy</p>
-                </div>
-                <p>check</p>
-            </div>
-            
-            <div class="flex flex-row bg-[#C4C4C4]/20 items-center gap-[15px] rounded-[15px] p-[5px]">
-                <p class="text-[38px] text-[#D1D1D1]">05</p>
-                <div class="flex flex-col grow">
-                    <p class="text-[14px]">Modul 4</p>
-                    <p class="text-[12px] text-[#6B6B6B]">Tanggal ditambahkan : dd/mm/yy</p>
-                </div>
-                <p>check</p>
-            </div>
-            
-            <div class="flex flex-row bg-[#C4C4C4]/20 items-center gap-[15px] rounded-[15px] p-[5px]">
-                <p class="text-[38px] text-[#D1D1D1]">06</p>
-                <div class="flex flex-col grow">
-                    <p class="text-[14px]">Modul 5</p>
-                    <p class="text-[12px] text-[#6B6B6B]">Tanggal ditambahkan : dd/mm/yy</p>
-                </div>
-                <p>check</p>
-            </div>
-
-        </div>
-
-        <div class="bg-[#C4C4C4]/20 mb-[25px] p-[5px] rounded-[10px]">
-            <p>Asisten</p>
-            <div class="flex flex-row items-center gap-[20px]">
-                <div class="bg-[url(/asset/allSprites.png)] bg-position-[-50_-50] bg-[#C4C4C4] size-[50px] rounded-full"></div>
-                <p>Zayn Malik</p>
-                <img src="asset/ChatCircleDots.png">
-            </div>
-        </div>
-
+    <!-- HEADER -->
+    <div class="custom-header d-flex align-items-center justify-content-between px-3">
+      <a href="praktikanModul.html" class="text-decoration-none">
+        <i class="bi bi-arrow-left text-white fs-4"></i>
+      </a>
+      <h5 class="text-white m-0">Pemrograman SQL</h5>
+      <i class="bi bi-bell text-white fs-4"></i>
     </div>
 
-
-    <!-- footer -->
-    <div class="bg-white fixed bottom-0 right-0 left-0 flex flex-row justify-around items-end pt-[10px] rounded-t-[20px] border-t-4 border-[#f0f0f0]">
-
-        <div class="flex flex-col items-center w-[100px]">
-            <input type="radio" id="beranda" name="navbar" class="peer sr-only" autocomplete="off">
-            <label for="beranda" 
-                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[0_0] peer-checked:bg-position-[0_-30]">
-            </label>
-            <label for="beranda">Beranda</label>
+    <!-- ISI MODUL -->
+    <div class="profile-card mx-3">
+      <div class="d-flex flex-column gap-3">
+        <!-- Modul 1–6 -->
+        <div class="bg-light p-3 rounded-3 d-flex align-items-center gap-3 shadow-sm">
+          <div class="fs-3 fw-bold text-secondary">01</div>
+          <div class="flex-grow-1">
+            <a href="praktikanModul3.html" class="btn text-black fw-semibold">Kontrak Kuliah dan RPS</a>
+            <div class="text-muted small">Tanggal ditambahkan : 10/11/2025</div>
+          </div>
+          <div class="text-success fw-bold">✔</div>
         </div>
 
-        <div class="flex flex-col items-center w-[100px]">
-            <input type="radio" id="pengumuman" name="navbar" class="peer sr-only" autocomplete="off">
-            <label for="pengumuman"
-                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[-30_0] peer-checked:bg-position-[-30_-30]">
-            </label>
-            <label  for="pengumuman">Pengumuman</label>
+        <div class="bg-light p-3 rounded-3 d-flex align-items-center gap-3 shadow-sm">
+          <div class="fs-3 fw-bold text-secondary">02</div>
+          <div class="flex-grow-1">
+            <a href="praktikanModul3.html" class="btn text-black fw-semibold">Modul 1</a>
+            <div class="text-muted small">Tanggal ditambahkan :  10/11/2025</div>
+          </div>
+          <div class="text-success fw-bold">✔</div>
         </div>
 
-        <div class="flex flex-col items-center w-[100px]">
-            <input type="radio" id="forum" name="navbar" class="peer sr-only" autocomplete="off">
-            <label for="forum"
-                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[-60_0] peer-checked:bg-position-[-60_-30]">
-            </label>
-            <label  for="forum">Forum</label>
+        <div class="bg-light p-3 rounded-3 d-flex align-items-center gap-3 shadow-sm">
+          <div class="fs-3 fw-bold text-secondary">03</div>
+          <div class="flex-grow-1">
+            <a href="praktikanModul3.html" class="btn text-black fw-semibold">Modul 2</a>
+            <div class="text-muted small">Tanggal ditambahkan :  10/11/2025</div>
+          </div>
+          <div class="text-success fw-bold">✔</div>
         </div>
 
+        <div class="bg-light p-3 rounded-3 d-flex align-items-center gap-3 shadow-sm">
+          <div class="fs-3 fw-bold text-secondary">04</div>
+          <div class="flex-grow-1">
+            <a href="praktikanModul3.html" class="btn text-black fw-semibold">Modul 3</a>
+            <div class="text-muted small">Tanggal ditambahkan : 10/11/2025</div>
+          </div>
+          <div class="text-success fw-bold">✔</div>
+        </div>
+
+        <div class="bg-light p-3 rounded-3 d-flex align-items-center gap-3 shadow-sm">
+          <div class="fs-3 fw-bold text-secondary">05</div>
+          <div class="flex-grow-1">
+            <a href="praktikanModul3.html" class="btn text-black fw-semibold">Modul 4</a>
+            <div class="text-muted small">Tanggal ditambahkan : 10/11/2025</div>
+          </div>
+          <div class="text-success fw-bold">✔</div>
+        </div>
+
+        <div class="bg-light p-3 rounded-3 d-flex align-items-center gap-3 shadow-sm">
+          <div class="fs-3 fw-bold text-secondary">06</div>
+          <div class="flex-grow-1">
+            <a href="praktikanModul3.html" class="btn text-black fw-semibold">Modul 5</a>
+            <div class="text-muted small">Tanggal ditambahkan : 10/11/2025</div>
+          </div>
+          <div class="text-success fw-bold">✔</div>
+        </div>
+      </div>
+
+      <!-- Info Asisten -->
+      <div class="mt-4 bg-light rounded-3 p-3 shadow-sm">
+        <p class="fw-semibold mb-2">Asisten</p>
+        <div class="d-flex align-items-center gap-3">
+          <div class="rounded-circle bg-secondary" style="width: 48px; height: 48px; background-image: url('asset/allSprites.png'); background-position: -50px -50px; background-size: cover;"></div>
+          <p class="mb-0 flex-grow">Zayn Malik</p>
+          <img src="asset/ChatCircleDots.png" alt="Chat" style="width: 24px; height: 24px;" />
+        </div>
+      </div>
     </div>
 
-</div>
+    <!-- FOOTER NAVIGATION -->
+    <nav class="profile-nav d-flex justify-content-around align-items-center fixed-bottom bg-white border-top pt-1">
+      <button class="btn btn-link d-flex flex-column align-items-center active">
+        <i class="bi bi-house-door-fill"></i>
+        <small>Beranda</small>
+      </button>
+      <button class="btn btn-link d-flex flex-column align-items-center">
+        <i class="bi bi-list"></i>
+        <small>Pengumuman</small>
+      </button>
+      <button class="btn btn-link d-flex flex-column align-items-center">
+        <i class="bi bi-chat-dots"></i>
+        <small>Forum</small>
+      </button>
+    </nav>
+  </div>
 
 </body>
-
 </html>
