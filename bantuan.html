@@ -71,6 +71,14 @@
         flex-shrink: 0;
       }
 
+      .hubungi-fixed {
+        position: fixed;
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        z-index: 10;
+      }
+
       .btn-orange {
         background-color: #ffa500;
         color: white;
@@ -113,15 +121,19 @@
   <body>
     <!-- Header -->
     <div class="custom-header">
-      <a href="javascript:history.back()" class="text-white fs-4">
-        <i class="bi bi-arrow-left"></i>
+      <!-- TODO: Lebih baik arahkan ke halaman 'beranda.html' agar tidak looping dari bantuan kembali ke chat bantuan -->
+      <a
+        href="forum.html"
+        class="text-white text-decoration-none me-2"
+      >
+        <i class="bi bi-arrow-left text-white fs-4"></i>
       </a>
       <h5>Bantuan</h5>
       <i class="bi bi-three-dots-vertical text-white fs-5"></i>
     </div>
 
     <!-- Konten -->
-    <div class="container py-3">
+    <div class="container py-3 px-3">
       <div class="mb-3">
         <p class="mb-1 fw-bold">
           Halo, <span style="font-weight: 900">Leo Valdez</span>
@@ -220,7 +232,7 @@
       </div>
 
       <!-- Hubungi Kami -->
-      <div class="mt-4 hubungi-box">
+      <div class="hubungi-box hubungi-fixed">
         <div class="hubungi-icon">
           <i class="bi bi-headset"></i>
         </div>
@@ -231,7 +243,6 @@
           Hubungi kami
         </a>
       </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
