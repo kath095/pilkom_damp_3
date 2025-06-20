@@ -1,0 +1,154 @@
+<!-- <!doctype html> -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        @font-face {
+        font-family: 'Satoshi';
+        src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+            url('../fonts/Satoshi-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+    </style> 
+</head>
+
+<body class="bg-[#081B58] font-[Satoshi]">
+
+<div id="container" class="flex flex-col gap-[20px] justify-end h-full">
+
+    <img src="asset/Ellipse.png" 
+        class="min-w-[233.74px] fixed right-[-80px] top-[-50px] z-[-2]">
+
+
+    <div id="top" class="flex flex-row items-center px-[10px] gap-[15px]">
+        <!-- Judul -->
+        
+        <img src="asset/arrow_back.png">
+        <div class="flex-grow text-center">
+            <p class="text-[25px] text-white">Modul</p>
+        </div>
+        <img src="asset/notifications.png">
+        <img src="asset/settings.png" >
+    </div>
+
+    
+    <div class="bg-white overflow-y-auto rounded-t-[25px] h-[88%] flex flex-col px-[10px] gap-[15px] pb-[55px]">
+        <!-- Isi -->
+
+        <!-- top -->
+        <div class="sticky top-0 pt-[20px] pb-[25px] bg-gradient-to-b from-white from-80% to-transparent">
+            <div class="flex flex-row justify-around ">
+                <div class="border-b-4 border-[#ED550E] pb-[15px]">
+                    <p>Modul Saya</p>
+                </div>
+
+                <div class="border-b-4 border-[#D8D5D3] pb-[15px]">
+                    <p>Tambah Modul</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row place-items-center m-[15px]">
+                <div  class="size-[32px] bg-[#FF9501] rounded-[25px] grid place-items-center">
+                    <img src="asset/chrome_reader_mode.png" class="size-[19px]">
+                </div>
+
+                <p class="grow align-baseline px-[5px]">Daftar Matakuliah</p>
+
+                
+                <img src="asset/filter.png" class="size-[30px]">
+                
+            </div>
+        </div>
+      
+        <div class="flex gap-[10px] flex-wrap justify-center">
+                <div class="bg-white mb-[15px] flex flex-col items-center shadow-lg rounded-[12px] w-fit">
+                    <img src="img/img1.png" alt="test informasi">
+                    <p class="self-start max-w-[360px] text-[15px]">
+                        <b>Pemrograman SQL | SI - A</b>
+                    </p>
+                    <p class="self-start max-w-[360px] text-[10px] font-[Roboto]">
+                        Nanang Yudi Setiawan<br>
+                        Rabu 09.00 - 10.30 WIB<br>
+                        Ruang G1.3
+                    </p>
+                    <button class="w-[363px] h-[39px] bg-[#FF9501] text-white text-start m-[10px] p-[10px] rounded-[7px]">
+                        <div class="flex flex-row items-center gap-[5px]">
+                            <p>Selengkapnya</p>
+                            <img src="../asset/arrowRightWhite.png" class="size-[14px]">
+                        </div>
+                    </button>
+                </div>
+
+                <div class="bg-white mb-[15px] flex flex-col items-center shadow-lg rounded-[12px] w-fit">
+                    <img src="img/img2.png" alt="test informasi">
+                    <p class="self-start m-[10px]">
+                        <b>Lorem Ipsum Dolor Sit Amet</b>
+                        <br>Lorem Ipsum Dolor Sit Amet..
+                    </p>
+                    <button class="w-[363px] h-[39px] bg-[#FF9501] text-white text-start m-[10px] p-[10px] rounded-[7px]">
+                        <div class="flex flex-row items-center gap-[5px]">
+                            <p>Selengkapnya</p>
+                            <img src="../asset/arrowRightWhite.png" class="size-[14px]">
+                        </div>
+                    </button>
+                </div>
+                
+                <div class="bg-white mb-[15px] flex flex-col items-center shadow-lg rounded-[12px] w-fit">
+                    <img src="img/img3.png" alt="test informasi">
+                    <p class="self-start m-[10px]">
+                        <b>Lorem Ipsum Dolor Sit Amet</b>
+                        <br>Lorem Ipsum Dolor Sit Amet..
+                    </p>
+                    <button class="w-[363px] h-[39px] bg-[#FF9501] text-white text-start m-[10px] p-[10px] rounded-[7px]">
+                        <div class="flex flex-row items-center gap-[5px]">
+                            <p>Selengkapnya</p>
+                            <img src="../asset/arrowRightWhite.png" class="size-[14px]">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        
+
+    </div>
+
+
+    <!-- footer -->
+    <div class="bg-white fixed bottom-0 right-0 left-0 flex flex-row justify-around items-end pt-[10px] rounded-t-[20px] border-t-4 border-[#f0f0f0]">
+
+        <div class="flex flex-col items-center w-[100px]">
+            <input type="radio" id="beranda" name="navbar" class="peer sr-only" autocomplete="off" checked>
+            <label for="beranda" 
+                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[0_0] peer-checked:bg-position-[0_-30]">
+            </label>
+            <label for="beranda">Beranda</label>
+        </div>
+
+        <div class="flex flex-col items-center w-[100px]">
+            <input type="radio" id="pengumuman" name="navbar" class="peer sr-only" autocomplete="off">
+            <label for="pengumuman"
+                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[-30_0] peer-checked:bg-position-[-30_-30]">
+            </label>
+            <label  for="pengumuman">Pengumuman</label>
+        </div>
+
+        <div class="flex flex-col items-center w-[100px]">
+            <input type="radio" id="forum" name="navbar" class="peer sr-only" autocomplete="off">
+            <label for="forum"
+                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[-60_0] peer-checked:bg-position-[-60_-30]">
+            </label>
+            <label  for="forum">Forum</label>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

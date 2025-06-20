@@ -349,3 +349,98 @@ select.form-select-sm {
   object-fit: cover; /* Memastikan gambar mengisi area dengan proporsi yang benar dan tidak terdistorsi */
 }
 
+/* Tambahan lagi */
+/* ====== KOMENTAR: Bubble Chat & Input ====== */
+.chat-section {
+  padding: 1rem;
+  padding-bottom: 100px;
+}
+
+.chat-bubble {
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.chat-left {
+  background-color: #f1f1f1;
+  border-top-left-radius: 0;
+  margin-right: auto;
+}
+
+.chat-right {
+  background-color: #e1f7ed;
+  border-top-right-radius: 0;
+  margin-left: auto;
+}
+
+.chat-header {
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.chat-time {
+  font-weight: normal;
+  font-size: 12px;
+  color: gray;
+  margin-left: 10px;
+}
+
+/* ====== INPUT CHAT AREA ====== */
+.chat-input-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  z-index: 99;
+}
+
+.chat-input-area input {
+  flex-grow: 1;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-size: 14px;
+  margin: 0 10px;
+  height: 40px;
+  line-height: 1.4;
+}
+
+.chat-input-area input:focus {
+  outline: none;
+}
+
+.chat-input-area .btn-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 0;
+}
+
+.chat-input-area .btn-send {
+  background-color: #0a1c64;
+  color: white;
+}
+
+.chat-input-area .btn-plus {
+  background-color: #6c757d;
+  color: white;
+}

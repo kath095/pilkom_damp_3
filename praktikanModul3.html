@@ -1,0 +1,109 @@
+<!-- <!doctype html> -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        @font-face {
+        font-family: 'Satoshi';
+        src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+            url('../fonts/Satoshi-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+    </style> 
+</head>
+
+<body class="bg-[#081B58] font-[Satoshi]">
+
+<div id="container" class="flex flex-col gap-[20px] justify-end h-full">
+
+    <img src="asset/Ellipse.png" 
+        class="min-w-[233.74px] fixed right-[-80px] top-[-50px] z-[-2]">
+
+
+    <div id="top" class="flex flex-row items-center px-[10px] gap-[15px]">
+        <!-- Judul -->
+        
+        <img src="asset/arrow_back.png">
+        <div class="flex-grow text-center">
+            <p class="text-[25px] text-white">Modul</p>
+        </div>
+        <img src="asset/notifications.png">
+        <img src="asset/settings.png" >
+    </div>
+
+    
+    <div class="bg-white overflow-y-auto rounded-t-[25px] h-[88%] flex flex-col px-[10px] gap-[20px] pb-[55px] pt-[30px]">
+        <!-- Isi -->
+
+        <div class="flex flex-row bg-[#C4C4C4]/20 items-center gap-[15px] rounded-[15px] p-[5px]">
+            <p class="text-[38px] text-[#D1D1D1]">01</p>
+            <div class="flex flex-col grow">
+                <p class="text-[14px]">Kontrak Kuliah dan RPS</p>
+                <p class="text-[12px] text-[#6B6B6B]">Tanggal ditambahkan : dd/mm/yy</p>
+            </div>
+            <p>check</p>
+        </div>
+
+        <div class="bg-[#C4C4C4]/20 min-h-[216px] p-[15px] rounded-[15px]">
+            <p class="text-[16px] font-[Roboto]">Deskripsi</p>
+            <p class="text-[12px] font-[Roboto]">Lorem Ipsum Dolor . . .</p>
+        </div>
+
+        <div class="min-w-[170px] max-sm:max-w-[170px]">
+            <img src="img/img1.png">
+            <p>Kontrak Perkuliahan.pdf</p>
+        </div>
+
+        <button class="w-[360px] h-[40px] bg-[#081B58] text-center text-white rounded-[7px] p-[10px]">
+            Tandai Sudah Dibaca
+        </button>
+
+        <button class="w-[360px] h-[40px] bg-[#FF9501] text-left text-white rounded-[7px] p-[10px]">
+            <div class="flex flex-row items-center">
+                Penugasan
+                <img src="asset/arrow_back.png" class="rotate-180 size-[20px]">
+            </div>
+        </button>
+    </div>
+
+
+    <!-- footer -->
+    <div class="bg-white fixed bottom-0 right-0 left-0 flex flex-row justify-around items-end pt-[10px] rounded-t-[20px] border-t-4 border-[#f0f0f0]">
+
+        <div class="flex flex-col items-center w-[100px]">
+            <input type="radio" id="beranda" name="navbar" class="peer sr-only" autocomplete="off" checked>
+            <label for="beranda" 
+                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[0_0] peer-checked:bg-position-[0_-30]">
+            </label>
+            <label for="beranda">Beranda</label>
+        </div>
+
+        <div class="flex flex-col self-center items-center w-[100px]">
+            <input type="radio" id="pengumuman" name="navbar" class="peer sr-only" autocomplete="off">
+            <label for="pengumuman"
+                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[-30_0] peer-checked:bg-position-[-30_-30]">
+            </label>
+            <label  for="pengumuman">Pengumuman</label>
+        </div>
+
+        <div class="flex flex-col self-center items-center w-[100px]">
+            <input type="radio" id="forum" name="navbar" class="peer sr-only" autocomplete="off">
+            <label for="forum"
+                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[-60_0] peer-checked:bg-position-[-60_-30]">
+            </label>
+            <label  for="forum">Forum</label>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
