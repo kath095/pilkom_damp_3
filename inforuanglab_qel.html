@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi Ruang Laboratorium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    /* ================ INFO RUANG LAB ========== */
+    .lab-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #081b58;
+      margin: 24px 0 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-add,
+    .btn-edit {
+      border: none;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-add {
+      background-color: #081b58;
+      width: 28px;
+      color: white;
+      height: 28px;
+      font-size: 20px;
+    }
+
+    .btn-edit {
+      background-color: white;
+      color: #081b58;
+      width: 24px;
+      height: 24px;
+      font-size: 15px;
+      margin-left: 8px;
+    }
+
+    .lab-table th,
+    .lab-table td {
+      font-size: 14px;
+      font-weight: 400;
+      color: #081b58;
+    }
+
+    .lab-table thead {
+      border-bottom: 3px solid #c4c4c4;
+    }
+
+    .lab-table thead th {
+      border: none;
+    }
+
+    .lab-table tbody tr td {
+      border: none;
+    }
+    .layout-wrapper {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 100%;
+    }
+  </style>
+  <body>
+    <div class="layout-wrapper">
+      <div class="card-container" style="border-radius: 0">
+        <!-- Header -->
+        <div class="custom-header">
+          <i class="bi bi-arrow-left text-white fs-5"></i>
+          <h5 class="text-white m-0">Informasi Ruang Laboratorium</h5>
+          <div>
+            <i class="bi bi-bell text-white fs-5"></i>
+            <i class="bi bi-three-dots-vertical text-white fs-5 ms-2"></i>
+          </div>
+        </div>
+
+        <!-- Konten -->
+        <div class="p-3">
+          <!-- Ruangan -->
+          <div class="mb-4">
+            <div class="lab-title">
+              <span>Ruang G1.1</span>
+              <div>
+                <button class="btn-add" onclick="location.href='tambah-jadwal-lab.html'"><i class="bi bi-plus"></i></button>
+                <button class="btn-edit" onclick="location.href='edit-jadwal.html'"><i class="bi bi-pencil-fill"></i></button>
+              </div>
+            </div>
+            <table class="table lab-table w-100">
+              <thead>
+                <tr>
+                  <th>Hari</th>
+                  <th>Pukul</th>
+                  <th>Mata Kuliah</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Senin</td>
+                  <td>00:00 - 00:00</td>
+                  <td>Mata kuliah</td>
+                  <td>Digunakan</td>
+                </tr>
+                <tr>
+                  <td>Senin</td>
+                  <td>00:00 - 00:00</td>
+                  <td>Mata kuliah</td>
+                  <td>Kosong</td>
+                </tr>
+                <tr>
+                  <td>Selasa</td>
+                  <td>00:00 - 00:00</td>
+                  <td>Mata kuliah</td>
+                  <td>Digunakan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mb-4">
+            <div class="lab-title">
+              <span>Ruang G1.2</span>
+              <div>
+                <button class="btn-add" onclick="location.href='tambah-jadwal-lab.html'"><i class="bi bi-plus"></i></button>
+                <button class="btn-edit" onclick="location.href='edit-jadwal.html'"><i class="bi bi-pencil-fill"></i></button>
+              </div>
+            </div>
+            <table class="table lab-table w-100">
+              <thead>
+                <tr>
+                  <th>Hari</th>
+                  <th>Pukul</th>
+                  <th>Mata Kuliah</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Senin</td>
+                  <td>00:00 - 00:00</td>
+                  <td>Mata kuliah</td>
+                  <td>Digunakan</td>
+                </tr>
+                <tr>
+                  <td>Senin</td>
+                  <td>00:00 - 00:00</td>
+                  <td>Mata kuliah</td>
+                  <td>Kosong</td>
+                </tr>
+                <tr>
+                  <td>Selasa</td>
+                  <td>00:00 - 00:00</td>
+                  <td>Mata kuliah</td>
+                  <td>Digunakan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mb-4">
+            <div class="lab-title">
+              <span>Ruang G1.3</span>
+              <div>
+                <button class="btn-add" onclick="location.href='tambah-jadwal.html'"><i class="bi bi-plus"></i></button>
+                <button class="btn-edit" onclick="location.href='edit-jadwal.html'"><i class="bi bi-pencil-fill"></i></button>
+              </div>
+            </div>
+            <table class="table lab-table w-100">
+              <thead>
+                <tr>
+                  <th>Hari</th>
+                  <th>Pukul</th>
+                  <th>Mata Kuliah</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Senin</td>
+                  <td>00:00 - 00:00</td>
+                  <td>Mata kuliah</td>
+                  <td>Digunakan</td>
+                </tr>
+                <tr>
+                  <td>Senin</td>
+                  <td>00:00 - 00:00</td>
+                  <td>Mata kuliah</td>
+                  <td>Kosong</td>
+                </tr>
+                <tr>
+                  <td>Selasa</td>
+                  <td>00:00 - 00:00</td>
+                  <td>Mata kuliah</td>
+                  <td>Digunakan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Ulangi untuk G1.2 dan G1.3 jika diperlukan -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
