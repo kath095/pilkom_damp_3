@@ -1,154 +1,97 @@
-<!-- <!doctype html> -->
-
-<html>
-
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <style>
-        @font-face {
-        font-family: 'Satoshi';
-        src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
-            url('../fonts/Satoshi-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        }
-    </style> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=375, initial-scale=1" />
+  <title>Modul Praktikan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<body class="bg-[#081B58] font-[Satoshi]">
-
-<div id="container" class="flex flex-col gap-[20px] justify-end h-full">
-
-    <img src="asset/Ellipse.png" 
-        class="min-w-[233.74px] fixed right-[-80px] top-[-50px] z-[-2]">
-
-
-    <div id="top" class="flex flex-row items-center px-[10px] gap-[15px]">
-        <!-- Judul -->
-        
-        <img src="asset/arrow_back.png">
-        <div class="flex-grow text-center">
-            <p class="text-[25px] text-white">Modul</p>
-        </div>
-        <img src="asset/notifications.png">
-        <img src="asset/settings.png" >
-    </div>
-
+<body>
+  <div class="profile-wrapper">
     
-    <div class="bg-white overflow-y-auto rounded-t-[25px] h-[88%] flex flex-col px-[10px] gap-[15px] pb-[55px]">
-        <!-- Isi -->
-
-        <!-- top -->
-        <div class="sticky top-0 pt-[20px] pb-[25px] bg-gradient-to-b from-white from-80% to-transparent">
-            <div class="flex flex-row justify-around ">
-                <div class="border-b-4 border-[#ED550E] pb-[15px]">
-                    <p>Modul Saya</p>
-                </div>
-
-                <div class="border-b-4 border-[#D8D5D3] pb-[15px]">
-                    <p>Tambah Modul</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row place-items-center m-[15px]">
-                <div  class="size-[32px] bg-[#FF9501] rounded-[25px] grid place-items-center">
-                    <img src="asset/chrome_reader_mode.png" class="size-[19px]">
-                </div>
-
-                <p class="grow align-baseline px-[5px]">Daftar Matakuliah</p>
-
-                
-                <img src="asset/filter.png" class="size-[30px]">
-                
-            </div>
-        </div>
-      
-        <div class="flex gap-[10px] flex-wrap justify-center">
-                <div class="bg-white mb-[15px] flex flex-col items-center shadow-lg rounded-[12px] w-fit">
-                    <img src="img/img1.png" alt="test informasi">
-                    <p class="self-start max-w-[360px] text-[15px]">
-                        <b>Pemrograman SQL | SI - A</b>
-                    </p>
-                    <p class="self-start max-w-[360px] text-[10px] font-[Roboto]">
-                        Nanang Yudi Setiawan<br>
-                        Rabu 09.00 - 10.30 WIB<br>
-                        Ruang G1.3
-                    </p>
-                    <button class="w-[363px] h-[39px] bg-[#FF9501] text-white text-start m-[10px] p-[10px] rounded-[7px]">
-                        <div class="flex flex-row items-center gap-[5px]">
-                            <p>Selengkapnya</p>
-                            <img src="../asset/arrowRightWhite.png" class="size-[14px]">
-                        </div>
-                    </button>
-                </div>
-
-                <div class="bg-white mb-[15px] flex flex-col items-center shadow-lg rounded-[12px] w-fit">
-                    <img src="img/img2.png" alt="test informasi">
-                    <p class="self-start m-[10px]">
-                        <b>Lorem Ipsum Dolor Sit Amet</b>
-                        <br>Lorem Ipsum Dolor Sit Amet..
-                    </p>
-                    <button class="w-[363px] h-[39px] bg-[#FF9501] text-white text-start m-[10px] p-[10px] rounded-[7px]">
-                        <div class="flex flex-row items-center gap-[5px]">
-                            <p>Selengkapnya</p>
-                            <img src="../asset/arrowRightWhite.png" class="size-[14px]">
-                        </div>
-                    </button>
-                </div>
-                
-                <div class="bg-white mb-[15px] flex flex-col items-center shadow-lg rounded-[12px] w-fit">
-                    <img src="img/img3.png" alt="test informasi">
-                    <p class="self-start m-[10px]">
-                        <b>Lorem Ipsum Dolor Sit Amet</b>
-                        <br>Lorem Ipsum Dolor Sit Amet..
-                    </p>
-                    <button class="w-[363px] h-[39px] bg-[#FF9501] text-white text-start m-[10px] p-[10px] rounded-[7px]">
-                        <div class="flex flex-row items-center gap-[5px]">
-                            <p>Selengkapnya</p>
-                            <img src="../asset/arrowRightWhite.png" class="size-[14px]">
-                        </div>
-                    </button>
-                </div>
-            </div>
-        
-
+    <!-- HEADER -->
+    <div class="custom-header d-flex align-items-center justify-content-between px-3">
+      <a href="dashboard.html" class="text-decoration-none">
+        <i class="bi bi-arrow-left text-white fs-4"></i>
+      </a>
+      <h5 class="text-white m-0">Modul</h5>
+      <i class="bi bi-bell text-white fs-4"></i>
     </div>
 
+    <!-- ISI MODUL -->
+    <div class="profile-card mx-3 my-3">
+      <!-- Tab -->
+      <div class="d-flex justify-content-between border-bottom pb-2 mb-3">
+        <div class="fw-bold border-bottom border-4 border-warning pb-1">Modul Saya</div>
+        <div class="text-muted">Tambah Modul</div>
+      </div>
 
-    <!-- footer -->
-    <div class="bg-white fixed bottom-0 right-0 left-0 flex flex-row justify-around items-end pt-[10px] rounded-t-[20px] border-t-4 border-[#f0f0f0]">
-
-        <div class="flex flex-col items-center w-[100px]">
-            <input type="radio" id="beranda" name="navbar" class="peer sr-only" autocomplete="off" checked>
-            <label for="beranda" 
-                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[0_0] peer-checked:bg-position-[0_-30]">
-            </label>
-            <label for="beranda">Beranda</label>
+      <!-- Daftar Matakuliah -->
+      <div class="d-flex align-items-center mb-3">
+        <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+          <i class="bi bi-journal-text text-white"></i>
         </div>
+        <span class="ms-2">Daftar Matakuliah</span>
+        <i class="bi bi-funnel ms-auto text-secondary"></i>
+      </div>
 
-        <div class="flex flex-col items-center w-[100px]">
-            <input type="radio" id="pengumuman" name="navbar" class="peer sr-only" autocomplete="off">
-            <label for="pengumuman"
-                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[-30_0] peer-checked:bg-position-[-30_-30]">
-            </label>
-            <label  for="pengumuman">Pengumuman</label>
+      <!-- Card Modul 1 -->
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h6 class="fw-bold">Pemrograman SQL | SI - A</h6>
+          <p class="mb-2 text-muted small">
+            Nanang Yudi Setiawan<br>
+            Rabu 09.00 - 10.30 WIB<br>
+            Ruang G1.3
+          </p>
+          <a href="praktikanModul2.html" class="btn btn-warning text-white fw-bold w-100">Selengkapnya</a>
         </div>
+      </div>
 
-        <div class="flex flex-col items-center w-[100px]">
-            <input type="radio" id="forum" name="navbar" class="peer sr-only" autocomplete="off">
-            <label for="forum"
-                class="w-[30px] h-[30px] bg-no-repeat bg-[url(../asset/footerSprites.png)] bg-position-[-60_0] peer-checked:bg-position-[-60_-30]">
-            </label>
-            <label  for="forum">Forum</label>
+      <!-- Card Modul 2 -->
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h6 class="fw-bold"> Pemrograman Website</h6>
+           <p class="mb-2 text-muted small">
+            Nanang Yudi Setiawan<br>
+            Kamis 09.00 - 10.30 WIB<br>
+            Ruang G1.3
+          </p>
+          <a href="praktikanModul2.html" class="btn btn-warning text-white fw-bold w-100">Selengkapnya</a>
         </div>
+      </div>
 
+      <!-- Card Modul 3 -->
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h6 class="fw-bold">Arsitektur Komputer</h6>
+          <p class="mb-2 text-muted small">
+            Nanang Yudi Setiawan<br>
+            Rabu 09.00 - 10.30 WIB<br>
+            Ruang G1.3
+          </p>
+          <a href="praktikanModul2.html" class="btn btn-warning text-white fw-bold w-100">Selengkapnya</a>
+        </div>
+      </div>
     </div>
 
-</div>
-
+    <!-- FOOTER NAVIGATION -->
+    <nav class="profile-nav d-flex justify-content-around align-items-center fixed-bottom bg-white border-top pt-1">
+      <button class="btn btn-link d-flex flex-column align-items-center active">
+        <i class="bi bi-house-door-fill"></i>
+        <small>Beranda</small>
+      </button>
+      <button class="btn btn-link d-flex flex-column align-items-center">
+        <i class="bi bi-list"></i>
+        <small>Pengumuman</small>
+      </button>
+      <button class="btn btn-link d-flex flex-column align-items-center">
+        <i class="bi bi-chat-dots"></i>
+        <small>Forum</small>
+      </button>
+    </nav>
+  </div>
 </body>
-
 </html>
