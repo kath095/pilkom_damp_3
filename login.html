@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- Memberi tahu browser bahwa ini adalah dokumen HTML5 -->
+<html lang="id"> <!-- Menandakan bahasa utama halaman ini adalah Bahasa Indonesia -->
+
+<head>
+  <meta charset="UTF-8" /> <!-- Mengatur karakter agar mendukung huruf dan simbol -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Supaya halaman responsif di semua ukuran layar -->
+  <title>PILKOM Login</title> <!-- Judul tab browser -->
+
+  <!-- Memanggil file CSS dari Bootstrap untuk gaya bawaan -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Memanggil file CSS eksternal buatan sendiri -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Kontainer utama: vertikal (kolom), isi di tengah halaman -->
+  <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+    
+    <!-- Tombol panah kembali -->
+    <div class="back-arrow mb-4">
+      <!-- SVG hanya bentuk panah, belum ada isi -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#15274B" viewBox="0 0 24 24">
+      </svg>
+    </div>
+
+    <!-- Judul halaman -->
+    <div class="text-center mb-5">
+      <h4 class="title">PILKOM</h4> <!-- Judul utama -->
+      <p class="subtitle mb-0">Fakultas Ilmu Komputer<br />Universitas Brawijaya</p> <!-- Subjudul -->
+    </div>
+
+    <h5 class="login-title mb-3">Login</h5> <!-- Judul form login -->
+
+    <!-- Form login -->
+    <form class="w-100 px-3" style="max-width: 350px;"> <!-- Lebar form maksimal 350px, di tengah -->
+      
+      <!-- Input untuk NIM/NIP -->
+      <div class="mb-3 input-group-custom">
+        <!-- Ikon user -->
+        <span class="input-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#15274B" viewBox="0 0 24 24">
+            <circle cx="12" cy="7" r="4" stroke="#15274B" stroke-width="2" fill="none"/>
+            <path d="M5.5 21a8.38 8.38 0 0113 0" stroke="#15274B" stroke-width="2" fill="none"/>
+          </svg>
+        </span>
+        <!-- Kolom input untuk NIM atau NIP -->
+        <input type="text" class="form-control" placeholder="NIM/NIP" />
+      </div>
+
+      <!-- Input untuk Password -->
+      <div class="mb-4 input-group-custom">
+        <!-- Ikon gembok/password -->
+        <span class="input-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#15274B" viewBox="0 0 24 24">
+            <rect x="5" y="9" width="14" height="10" rx="2" ry="2" stroke="#15274B" stroke-width="2" fill="none"/>
+            <path d="M12 15v2" stroke="#15274B" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8 9V7a4 4 0 018 0v2" stroke="#15274B" stroke-width="2" fill="none"/>
+          </svg>
+        </span>
+        <!-- Kolom input untuk password -->
+        <input type="password" class="form-control" placeholder="Password" />
+        
+        <!-- (Catatan: baris </svg> dan </button> di bawah ini tampaknya tidak perlu dan bisa dihapus karena tidak ada tombol yang dibuka) -->
+      </div>
+
+      <!-- Tombol login, jika ditekan akan diarahkan ke dashboard.html -->
+      <a href="dashboard.html" class="btn btn-warning w-100 mb-3">Login</a>
+    </form>
+
+    <!-- Link jika pengguna lupa password -->
+    <a href="#" class="forgot-password mb-5">Lupa Password?</a>
+
+    <!-- Info untuk hubungi admin -->
+    <div class="contact-admin">
+      <!-- Ikon info bulat -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#15274B" viewBox="0 0 24 24" class="me-1">
+        <circle cx="12" cy="12" r="10" stroke="#15274B" stroke-width="2" fill="none"/>
+        <path d="M12 8v4" stroke="#15274B" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="16" r="1" fill="#15274B"/>
+      </svg>
+      <!-- Teks hubungi admin -->
+      <a href="#" class="text-decoration-none text-dark">Hubungi Admin</a>
+    </div>
+  </div>
+
+  <!-- Script Bootstrap untuk fungsi tambahan seperti modal, dropdown, dll -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+'
