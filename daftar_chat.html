@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=375, user-scalable=no" />
+    <title>Daftar Chat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .custom-header {
+        background-color: #0a1c64;
+        color: white;
+        padding: 12px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="custom-header">
+      <a
+        href="javascript:history.back()"
+        class="text-white fs-4 text-decoration-none"
+      >
+        <i class="bi bi-arrow-left"></i>
+      </a>
+      <h5>Daftar Chat</h5>
+      <div>
+        <a href="bantuan.html" class="text-white text-decoration-none me-2">
+          <i class="bi bi-bell fs-4"></i>
+        </a>
+        <i class="bi bi-three-dots-vertical text-white fs-5"></i>
+      </div>
+    </div>
+
+    <!-- List Chat -->
+    <div class="list-group">
+      <!-- Chat 1 -->
+      <a
+        href="#"
+        class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+      >
+        <div class="d-flex">
+          <i class="bi bi-person-circle fs-1 text-secondary me-2"></i>
+          <div>
+            <div class="fw-bold">Dewi Ayu</div>
+            <small class="text-muted">Baikk</small>
+          </div>
+        </div>
+        <small class="text-muted">Sekarang</small>
+      </a>
+
+      <!-- Chat 2 -->
+      <a
+        href="chat.html"
+        class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+      >
+        <div class="d-flex">
+          <i class="bi bi-person-circle fs-1 text-secondary me-2"></i>
+          <div>
+            <div class="fw-bold">Zayn Malik</div>
+            <small
+              class="text-muted text-truncate d-block"
+              style="max-width: 180px"
+            >
+              Boleh-bolehh, mau ketemu aja lang...
+            </small>
+          </div>
+        </div>
+        <small class="text-muted">15.15</small>
+      </a>
+
+      <!-- Chat 3 -->
+      <a
+        href="#"
+        class="list-group-item list-group-item-action d-flex justify-content-between align-items-start bg-light"
+      >
+        <div class="d-flex">
+          <i class="bi bi-person-circle fs-1 text-secondary me-2"></i>
+          <div>
+            <div class="fw-bold">Corbyn Maulana</div>
+            <small class="text-muted">Waitt</small>
+          </div>
+        </div>
+        <small class="text-muted">Kemarin</small>
+      </a>
+
+      <!-- Chat 4 -->
+      <a
+        href="#"
+        class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+      >
+        <div class="d-flex">
+          <i class="bi bi-person-circle fs-1 text-secondary me-2"></i>
+          <div>
+            <div class="fw-bold">Bucky Barnes</div>
+            <small class="text-muted">Oke</small>
+          </div>
+        </div>
+        <small class="text-muted">15/05</small>
+      </a>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="navbar fixed-bottom bg-white border-top">
+      <div class="container-fluid d-flex justify-content-around">
+        <a class="text-center text-muted small text-decoration-none" href="#">
+          <i class="bi bi-house-door-fill fs-4 d-block"></i>Beranda
+        </a>
+        <a class="text-center text-muted small text-decoration-none" href="#">
+          <i class="bi bi-megaphone-fill fs-4 d-block"></i>Pengumuman
+        </a>
+        <a
+          class="text-center text-dark small text-decoration-none active"
+          href="#"
+        >
+          <i class="bi bi-chat-left-text-fill fs-4 d-block"></i>Forum
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>
