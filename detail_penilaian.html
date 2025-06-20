@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detail Penilaian</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet" /> <!-- Gaya global kamu -->
+</head>
+<body>
+
+  <!-- Header -->
+   <div class="custom-header">
+    <i class="bi bi-arrow-left text-white fs-4"></i>
+    <h5>Penilaian</h5>
+    <div>
+        <i class="bi bi-bell text-white fs-4"></i>
+        <i class="bi bi-three-dots-vertical text-white fs-5 ms-2"></i>
+    </div>
+    </div>
+
+  <div class="container px-3">
+    <!-- Info Penugasan -->
+    <div class="card-mini mt-3">
+      <h6 class="fw-bold mb-1">Penugasan 1</h6>
+      <p class="mb-1">Mata kuliah Pemograman SQL | SI A</p>
+      <p class="text-muted mb-2">Batas pengumpulan : dd/mm/yy 00:00</p>
+
+      <!-- Info Mahasiswa -->
+      <div class="d-flex align-items-center gap-2 student-row">
+        <i class="bi bi-person-circle"></i>
+        <div>
+          <div class="fw-semibold">Student 1</div>
+          <small>Waktu pengumpulan : dd/mm/yy 00:00</small>
+        </div>
+      </div>
+
+      <!-- File Tugas -->
+      <div class="submission-card bg-white p-2 my-2 rounded">
+        <img src="https://via.placeholder.com/300x100?text=Preview+Tugas" alt="Preview tugas" class="img-fluid rounded">
+        <div class="text-center mt-1 fw-semibold">Student_1_NIM.pdf</div>
+      </div>
+
+      <!-- Form Penilaian -->
+      <div class="mt-2">
+        <label class="fw-semibold d-block mb-1">Beri penilaian :</label>
+        <input type="text" class="form-control form-control-sm rounded" placeholder="Type here...">
+      </div>
+      <div class="mt-2">
+        <label class="fw-semibold d-block mb-1">Komentar :</label>
+        <input type="text" class="form-control form-control-sm rounded" placeholder="Type here...">
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn btn-orange rounded-pill px-3">Submit</button>
+      </div>
+
+      <!-- Nilai Lainnya -->
+      <div class="border-top mt-3 pt-2 fw-bold small">Nilai lainnya</div>
+      <div class="d-flex align-items-center justify-content-between student-row">
+        <div class="d-flex align-items-center gap-2">
+          <i class="bi bi-person-circle"></i>
+          <div>
+            <div class="fw-semibold">Student 1</div>
+            <small>Waktu pengumpulan : dd/mm/yy 00:00</small>
+          </div>
+        </div>
+        <button class="btn btn-orange rounded-pill px-3">Nilai</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
