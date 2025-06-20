@@ -114,7 +114,6 @@
         nilaiEl.classList.remove("bg-secondary");
         nilaiEl.classList.add("bg-primary");
       } else {
-        // Sembunyikan badge nilai kalau tidak ada
         nilaiEl.classList.add("d-none");
       }
       document.getElementById("nama").value = data.nama;
@@ -125,7 +124,6 @@
       document.getElementById("khs").value = data.khs;
       document.getElementById("foto").value = data.foto;
 
-      // Aksi tombol
       document.getElementById("btnAccept").addEventListener("click", () => {
         document.getElementById("popupMessage").textContent =
           "Asisten diterima";
