@@ -444,3 +444,18 @@ select.form-select-sm {
   background-color: #6c757d;
   color: white;
 }
+
+/**======= PROFILE =======**/
+.btn-idcard {
+  background-color: #0a1c64; /* biru Bootstrap */
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-logout {
+  background-color: #ffa500; /* merah Bootstrap */
+  color: white;
+  font-weight: bold;
+  border: none;
+}
