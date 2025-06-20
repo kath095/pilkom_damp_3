@@ -227,3 +227,117 @@ select.form-select-sm {
 .btn-dark-blue:hover {
   background-color: #081550;
 }
+
+/* === HALAMAN REKRUTMEN DOSEN === */
+.rekrutmen-card {
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rekrutmen-card .hari {
+  width: 70px;
+  text-align: center;
+  border-right: 2px solid #ffa500; 
+}
+
+.rekrutmen-card .hari .jam {
+  color: #212529;
+  font-size: 14px;
+  margin: 0;
+}
+
+.rekrutmen-card .jam-panah {
+  color: #212529; 
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.rekrutmen-card .jam-akhir {
+  color: #212529; /
+}
+
+.rekrutmen-card .matkul {
+  padding: 0 1rem;
+  flex: 1;
+}
+
+.rekrutmen-card .matkul .judul {
+  font-weight: 600;
+}
+
+.rekrutmen-card .matkul .kelas {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.rekrutmen-card .matkul .lokasi {
+  font-size: 14px;
+  color: #ffa500; 
+}
+
+.rekrutmen-card .aksi {
+  text-align: end;
+  min-width: 100px;
+}
+
+.rekrutmen-card .kuota {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.rekrutmen-card .btn-orange {
+  background-color: #ffa500;
+  color: white;
+  border-radius: 20px;
+  padding: 4px 20px;
+  font-size: 14px;
+  border: none;
+}
+
+.rekrutmen-card .btn-orange:hover {
+  background-color: #e69500;
+}
+
+.rekrutmen-card .btn-blue {
+  background-color: #0091d3;
+  color: white;
+  border-radius: 20px;
+  padding: 4px 20px;
+  font-size: 14px;
+  border: none;
+}
+
+.rekrutmen-card .btn-blue:hover {
+  background-color: #007bb5;
+}
+
+/* === HALAMAN PENILAIAN ASISTEN === */
+.popup {
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 1000;
+  text-align: center;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup i {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
