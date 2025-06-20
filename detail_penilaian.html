@@ -6,29 +6,81 @@
   <title>Detail Penilaian</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
-  <link href="style.css" rel="stylesheet" /> <!-- Gaya global kamu -->
+  <link href="style.css" rel="stylesheet" />
+
+  <style>
+    .btn-kecil {
+      font-size: 0.65rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 1rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .card-mini {
+      font-size: 0.74rem;
+      padding: 1rem !important;
+      border-radius: 1rem;
+    }
+
+    .card-mini h6 {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-mini p,
+    .card-mini small,
+    .card-mini div {
+      margin-bottom: 0.3rem;
+      line-height: 1.2;
+    }
+
+    .card-mini .student-row {
+      margin-top: 0.8rem; /* Tambahkan spasi lebih longgar antar student */
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .card-mini i {
+      font-size: 1.2rem !important;
+    }
+
+    .submission-card {
+      font-size: 0.7rem;
+    }
+
+    .btn-orange {
+      background-color: #fd7e14;
+      color: white;
+      border: none;
+    }
+
+    .btn-orange:hover {
+      background-color: #e56700;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Header -->
-   <div class="custom-header">
+  <div class="custom-header">
     <i class="bi bi-arrow-left text-white fs-4"></i>
     <h5>Penilaian</h5>
     <div>
         <i class="bi bi-bell text-white fs-4"></i>
         <i class="bi bi-three-dots-vertical text-white fs-5 ms-2"></i>
     </div>
-    </div>
+  </div>
 
   <div class="container px-3">
     <!-- Info Penugasan -->
     <div class="card-mini mt-3">
-      <h6 class="fw-bold mb-1">Penugasan 1</h6>
-      <p class="mb-1">Mata kuliah Pemograman SQL | SI A</p>
-      <p class="text-muted mb-2">Batas pengumpulan : dd/mm/yy 00:00</p>
+      <h6 class="fw-bold">Penugasan 1</h6>
+      <p>Mata kuliah Pemograman SQL | SI A</p>
+      <p class="text-muted">Batas pengumpulan : dd/mm/yy 00:00</p>
 
       <!-- Info Mahasiswa -->
-      <div class="d-flex align-items-center gap-2 student-row">
+      <div class="d-flex align-items-center gap-2 student-row border-top pt-2">
         <i class="bi bi-person-circle"></i>
         <div>
           <div class="fw-semibold">Student 1</div>
@@ -38,7 +90,7 @@
 
       <!-- File Tugas -->
       <div class="submission-card bg-white p-2 my-2 rounded">
-        <img src="https://via.placeholder.com/300x100?text=Preview+Tugas" alt="Preview tugas" class="img-fluid rounded">
+        <img src="images/img1.png" alt="Preview tugas" class="img-fluid rounded">
         <div class="text-center mt-1 fw-semibold">Student_1_NIM.pdf</div>
       </div>
 
@@ -52,12 +104,12 @@
         <input type="text" class="form-control form-control-sm rounded" placeholder="Type here...">
       </div>
       <div class="text-center mt-3">
-        <button class="btn btn-orange rounded-pill px-3">Submit</button>
+        <button class="btn btn-orange btn-kecil">Submit</button>
       </div>
 
       <!-- Nilai Lainnya -->
-      <div class="border-top mt-3 pt-2 fw-bold small">Nilai lainnya</div>
-      <div class="d-flex align-items-center justify-content-between student-row">
+      <div class="border-top mt-4 pt-2 fw-bold small">Nilai lainnya</div>
+      <div class="d-flex align-items-center justify-content-between student-row border-top">
         <div class="d-flex align-items-center gap-2">
           <i class="bi bi-person-circle"></i>
           <div>
@@ -65,7 +117,7 @@
             <small>Waktu pengumpulan : dd/mm/yy 00:00</small>
           </div>
         </div>
-        <button class="btn btn-orange rounded-pill px-3">Nilai</button>
+        <button class="btn btn-orange btn-kecil">Nilai</button>
       </div>
     </div>
   </div>
