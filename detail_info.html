@@ -11,23 +11,35 @@
 <body>
 
 <!-- Header: Nama User -->
-<div class="custom-header">
-  <i class="bi bi-arrow-left text-white fs-4"></i>
-  <h5>Leo Valdez</h5>
-  <div>
+<div class="custom-header d-flex align-items-center px-3">
+  <!-- Header dengan layout flexbox agar ikon dan teks saling berdekatan -->
+
+  <a href="info.html" class="me-3">
+    <!-- Link untuk kembali ke info.html -->
+    <i class="bi bi-arrow-left text-white fs-4"></i>
+  </a>
+
+  <div class="d-flex align-items-center">
+    <!-- Kontainer untuk ikon profil dan nama, dengan margin kanan 0 -->
+    <i class="bi bi-person-circle text-white fs-4 me-1"></i>
+    <!-- Ikon profil menggunakan Bootstrap Icons, ukuran font 4, margin kanan 1 -->
+    <div class="text-white">
+      <h5 class="mb-0">Leo Valdez</h5>
+      <!-- Nama pengguna -->
+    </div>
+  </div>
+
+  <div class="ms-auto">
+    <!-- Ruang kosong otomatis untuk membuat elemen berikutnya bergerak ke kanan -->
     <i class="bi bi-bell text-white fs-4"></i>
     <i class="bi bi-three-dots-vertical text-white fs-5 ms-2"></i>
   </div>
 </div>
 
-<!-- NIM -->
-<div class="container text-center mt-2 mb-3">
-  <p class="text-muted small mb-0">2351610111016</p>
-</div>
-
 <!-- Body -->
-<div class="container">
-  <img src="https://via.placeholder.com/330x150" class="rounded w-100 mb-3" />
+<div class="container mt-4">
+  <!-- Menambahkan margin-top 4 untuk memberi jarak antara header dan gambar -->
+  <img src="images/gambar1.jpg" class="rounded mb-3 custom-img" />
   <h6 class="fw-bold">Pendaftaran Asisten laboratorium telah dibuka</h6>
   <p class="text-muted small">Selasa, 20 Agustus 2025</p>
 
@@ -42,7 +54,7 @@
 <!-- Bottom Navigation -->
 <nav class="navbar fixed-bottom bg-white border-top d-flex justify-content-around py-2">
   <a class="text-center text-muted small" href="#"><i class="bi bi-house-door-fill fs-5 d-block"></i>Beranda</a>
-  <a class="text-center text-dark small fw-bold" href="#"><i class="bi bi-megaphone-fill fs-5 d-block"></i>Pengumuman</a>
+  <a class="text-center text-muted small" href="#"><i class="bi bi-megaphone-fill fs-5 d-block"></i>Pengumuman</a>
   <a class="text-center text-muted small" href="#"><i class="bi bi-chat-left-text-fill fs-5 d-block"></i>Forum</a>
 </nav>
 

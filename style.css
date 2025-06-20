@@ -341,3 +341,11 @@ select.form-select-sm {
   display: block;
   margin-bottom: 0.5rem;
 }
+
+/* BUAT GAMBAR DI INFO */
+.custom-img {
+  width: 100%;
+  height: 200px; /* Mengatur tinggi gambar agar tidak terlalu besar */
+  object-fit: cover; /* Memastikan gambar mengisi area dengan proporsi yang benar dan tidak terdistorsi */
+}
+
