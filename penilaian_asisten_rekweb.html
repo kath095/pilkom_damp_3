@@ -198,7 +198,7 @@
       const simpanBtn = document.getElementById("simpanBtn");
       const inputs = document.querySelectorAll(".nilai-input");
 
-      // Fungsi untuk cek apakah semua input sudah diisi
+      // cek apakah semua input sudah diisi
       function checkAllFilled() {
         let filled = true;
         inputs.forEach((input) => {
@@ -209,12 +209,11 @@
         simpanBtn.disabled = !filled;
       }
 
-      // Tambahkan listener ke semua input nilai
       inputs.forEach((input) => {
         input.addEventListener("input", checkAllFilled);
       });
 
-      // Tindakan ketika form disubmit
+      // form disubmit
       form.addEventListener("submit", function (e) {
         e.preventDefault();
 
@@ -224,7 +223,7 @@
           popup.classList.remove("show");
           form.reset();
           simpanBtn.disabled = true;
-          window.location.href = "rekrutmen.html"; // ✅ redirect ke halaman rekrutmen
+          window.location.href = "rekrutmen.html"; 
         }, 2500);
       });
     </script>
