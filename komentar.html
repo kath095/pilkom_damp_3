@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=375, user-scalable=no" />
+    <title>Komentar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        padding-bottom: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="custom-header">
+      <a href="forum.html" class="text-white text-decoration-none me-2">
+        <i class="bi bi-arrow-left text-white fs-4"></i>
+      </a>
+      <h5>Komentar</h5>
+    </div>
+
+    <!-- Statistik Post -->
+    <div class="container py-3">
+      <div
+        class="d-flex justify-content-between align-items-center text-secondary"
+        style="font-size: 14px"
+      >
+        <div>1 kali dibagikan</div>
+        <div><i class="bi bi-heart"></i> 14 suka</div>
+      </div>
+    </div>
+
+    <!-- Bubble Chat -->
+    <div class="chat-section container">
+      <!-- Komentar Orang Lain -->
+      <div class="d-flex align-items-start mb-3">
+        <i class="bi bi-person-circle fs-4 text-secondary me-1 mt-1"></i>
+        <div>
+          <div
+            class="chat-bubble chat-left"
+            style="max-width: 280px; min-width: 180px"
+          >
+            <div class="chat-header d-flex justify-content-between">
+              <span>Natasha Romanoff</span>
+              <span class="chat-time">09.15</span>
+            </div>
+            <div>Aku masih bingung sih cara join tabelnya</div>
+          </div>
+          <div
+            class="chat-actions text-muted d-flex gap-3 ps-1 pt-1"
+            style="font-size: 13px"
+          >
+            <button
+              type="button"
+              class="btn-like bg-transparent border-0 text-muted p-0 d-flex align-items-center"
+            >
+              <i class="bi bi-heart me-1"></i>Suka
+            </button>
+            <button
+              type="button"
+              class="btn-reply bg-transparent border-0 text-muted p-0"
+            >
+              Balas
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Komentar Pembuat Post -->
+      <div class="d-flex justify-content-end align-items-start mb-3">
+        <div class="d-flex align-items-start">
+          <i class="bi bi-person-circle fs-4 text-secondary me-1 mt-1"></i>
+          <div>
+            <div
+              class="chat-bubble chat-right"
+              style="max-width: 280px; min-width: 180px"
+            >
+              <div class="chat-header d-flex justify-content-between">
+                <span>Zayn Malik</span>
+                <span class="chat-time">09.20</span>
+              </div>
+              <div>Nanti aku share contoh join inner ya</div>
+            </div>
+            <div
+              class="chat-actions text-muted d-flex gap-3 ps-1 pt-1"
+              style="font-size: 13px"
+            >
+              <button
+                type="button"
+                class="btn-like bg-transparent border-0 text-muted p-0 d-flex align-items-center"
+              >
+                <i class="bi bi-heart me-1"></i>Suka
+              </button>
+              <button
+                type="button"
+                class="btn-reply bg-transparent border-0 text-muted p-0"
+              >
+                Balas
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Komentar Orang Lain -->
+      <div class="d-flex align-items-start mb-3">
+        <i class="bi bi-person-circle fs-4 text-secondary me-1 mt-1"></i>
+        <div>
+          <div
+            class="chat-bubble chat-left"
+            style="max-width: 280px; min-width: 180px"
+          >
+            <div class="chat-header d-flex justify-content-between">
+              <span>Niall Horan</span>
+              <span class="chat-time">09.21</span>
+            </div>
+            <div>Siapp bang</div>
+          </div>
+          <div
+            class="chat-actions text-muted d-flex gap-3 ps-1 pt-1"
+            style="font-size: 13px"
+          >
+            <button
+              type="button"
+              class="btn-like bg-transparent border-0 text-muted p-0 d-flex align-items-center"
+            >
+              <i class="bi bi-heart me-1"></i>Suka
+            </button>
+            <button
+              type="button"
+              class="btn-reply bg-transparent border-0 text-muted p-0"
+            >
+              Balas
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Komentar -->
+    <div class="chat-input-area">
+      <button class="btn-icon btn-plus"><i class="bi bi-plus"></i></button>
+      <input type="text" placeholder="Tulis Komentar..." />
+      <button class="btn-icon btn-send"><i class="bi bi-send-fill"></i></button>
+    </div>
+    <script>
+      document.querySelectorAll(".btn-like").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const icon = this.querySelector("i");
+
+          if (icon.classList.contains("bi-heart")) {
+            icon.classList.remove("bi-heart");
+            icon.classList.add("bi-heart-fill");
+            this.classList.add("text-danger");
+          } else {
+            icon.classList.remove("bi-heart-fill");
+            icon.classList.add("bi-heart");
+            this.classList.remove("text-danger");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
